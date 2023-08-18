@@ -1,0 +1,167 @@
+/*Hotel.html*/
+.container {
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 60px;
+  padding-top: 20px;
+  font-family: jumeirah-font2;
+  width: 90%;
+}
+#booking-form {
+  border: 0;
+  margin: 30px;
+}
+.column-container {
+  border: 1px solid #434343;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.column-container > .form-group {
+  margin-left: 10px;
+  width: calc(50% - 10px);
+}
+h1 {
+  color: #000;
+  font-family: jumeirah-font2;
+  font-size: 1.5vw;
+  margin-left: 28px;
+}
+h2 {
+  color: #636363;
+  font-family: jumeirah-font2;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+h5 {
+  font-family: jumeirah-font2;
+  font-style: oblique;
+  font-weight: 300px;
+  margin-left: 10px;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+a.nav-link {
+  background: transparent;
+  border: 0;
+  color: #6b6b6b;
+  font-family: jumeirah-font2;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  text-transform: uppercase;
+}
+a.dropdown-item {
+  background: transparent;
+  color: #6b6b6b;
+  font-family: jumeirah-font2;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+label {
+  color: #988558;
+  display: block;
+  font-family: jumeirah-font2;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="month"],
+select {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 2px;
+  color: #363636;
+  margin-bottom: 12px;
+  margin-left: 15px;
+  padding: 15px;
+  width: 80%;
+}
+#prefix {
+  font-family: jumeirah-font2;
+  font-size: 15px;
+  margin-left: 15px;
+}
+#room-type {
+  font-family: jumeirah-font2;
+  font-size: 15px;
+  margin-bottom: 12px;
+  margin-left: 15px;
+}
+#amenities {
+  font-family: jumeirah-font2;
+  font-size: 15px;
+  margin-bottom: 12px;
+  margin-left: 15px;
+}
+#payment-method {
+  font-family: jumeirah-font2;
+  font-size: 15px;
+  margin-left: 15px;
+}
+textarea {
+  background-color: transparent;
+  border: 1px solid #434343;
+  border-radius: 5px;
+  color: #000;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 90%;
+}
+select option {
+  color: #000;
+  font-family: jumeirah-font2;
+  font-size: 15px;
+}
+.section img {
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+::placeholder {
+  color: #363636;
+  font-family: jumeirah-font2;
+  font-size: 15px;
+  margin: 0;
+}
+.card-image-container {
+  display: flex;
+  height: 20px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  width: 40px;
+}
+.card-image-container img {
+  border: 0;
+  border-radius: 0;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 0;
+  width: 50px;
+}
+input[type="text"][disabled],
+input[type="number"][disabled],
+input[type="date"][disabled],
+input[type="tel"][disabled],
+input[type="email"][disabled],
+select[disabled] {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+  </head>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top"
+    style="background-color: #fff">
+    <span class="navbar-brand mb-0 h1">THE SITARA HOTEL</span>
+
+    <button class="navbar-toggler" data-toggle="collapse"
+      data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end"
+      id="navbarCollapse">
+      <ul class="navbar-nav  ms-auto">
+        <li class="navbar-item px-2">
+          <a class="nav-link" href="Homepage.html">Hotel Info</a>
+        </li>
+        <li class="navbar-item active px-2">
+          <a class="nav-link" href="Rooms.html">Find reservations</a>
+        </li>
+        <li class="navbar-item px-2">
+          <a class="nav-link" href="#">(855) 730-6984</a>
+        </li>
+        <li class="navbar-item px-2 dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+            href="#" role="button"> Eng US</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a href="#" class="dropdown-item" value="deutsch">DEUTSCH</a>
+            <a href="#" class="dropdown-item" value="eng-uk">ENG UK</a>
+            <a href="#" class="dropdown-item active" value="eng-us">ENG US</a>
+            <a href="#" class="dropdown-item" value="es-es">ESPAÑOL-ESPAÑA</a>
+            <a href="#" class="dropdown-item" value="es-mx">ESPAÑOL-MÉXICO</a>
+            <a href="#" class="dropdown-item" value="fr">FRANÇAIS</a>
+            <a href="#" class="dropdown-item" value="it">ITALIANO</a>
+            <a href="#" class="dropdown-item" value="nl">NEDERLANDS</a>
+            <a href="#" class="dropdown-item" value="pt">PORTUGUÊS</a>
+            <a href="#" class="dropdown-item" value="ru">РУССКИЙ</a>
+          </div>
+        </li>
+        <li class="navbar-item px-2 dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+            href="#" role="button">US Dollars</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a href="#" class="dropdown-item">AUD DOLLARS</a>
+            <a href="#" class="dropdown-item">CAD DOLLARS</a>
+            <a href="#" class="dropdown-item">EUROS</a>
+            <a href="#" class="dropdown-item active">US DOLLARS</a>
+          </div>
+        </li>
+        <li class="navbar-item px-3">
+          <a class="nav-link" href="Sign-in.html" style="color: #7c6f55;">I
+            Prefer Sign in</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <body style="background-color: #eaeaea;">
+    <form>
+      <div class="container">
+
+        <!-- Section 1 -->
+        <div>
+          <h1>Confirm Your Reservation</h1>
+          <div id="booking-form">
+
+            <h2>Customer Info</h2>
+            <div class="column-container">
+
+              <div class="form-group">
+                <label>Prefix:</label><br>
+                <select id="prefix">
+                  <option disabled selected value>Prefix*</option>
+                  <option value="mr">Mr.</option>
+                  <option value="mrs">Mrs.</option>
+                  <option value="ms">Ms.</option>
+                  <option value="ms">Miss</option>
+                  <option value="ms">Dr.</option>
+                  <option value="ms">Prof.</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Customer Name:</label><br>
+                <input type="text" id="customer-name" required
+                  placeholder="Full Name*">
+              </div>
+
+              <div class="form-group">
+                <label>Phone:</label><br>
+                <input type="tel" id="phone" required
+                  placeholder="Enter Your Country Code*">
+              </div>
+
+              <div class="form-group">
+                <label>Email:</label><br>
+                <input type="email" id="emailaddress" required
+                  placeholder="Email Address*">
+              </div>
+
+              <div class="form-group">
+                <label for="check-in-date">Check-in Date:</label> <br>
+                <input type="date" id="check-in-date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="total-days">Total No of Days:</label> <br>
+                <input type="number" id="total-days" required
+                  placeholder="Enter number of days">
+              </div>
+
+              <div class="form-group">
+                <label for="total-persons">Total No of Persons:</label> <br>
+                <input type="number" id="total-persons" required
+                  placeholder="Enter number of persons">
+              </div>
+            </div>
+
+            <h2>Room Information</h2>
+            <div class="column-container">
+              <div class="form-group">
+                <label for="room-type">Room Type:</label> <br>
+                <select id="room-type">
+                  <option value="deluxe">Deluxe Room $2500</option>
+                  <option value="suite">Suite Room $4000</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="amenities">Amenities:</label> <br>
+                <select id="amenities">
+                  <option value="ac">AC $1000</option>
+                  <option value="locker">Locker $300</option>
+                </select>
+              </div>
+            </div>
+
+            <h2 style="margin-top: 20px;">Charges</h2>
+
+            <div class="column-container">
+              <div class="form-group">
+                <label for="advance-amount">Advance Amount:</label> <br>
+                <input type="number" id="advance-amount" required
+                  placeholder="Above $500">
+              </div>
+
+              <div class="form-group">
+                <label for="total-room-cost">Total Room Cost:</label> <br>
+                <input type="text" id="total-room-cost" placeholder="-" disabled>
+              </div>
+
+              <div class="form-group">
+                <label for="total-amenities-cost">Total Amenities Cost:</label>
+                <br>
+                <input type="text" id="total-amenities-cost" placeholder="-"
+                  disabled>
+              </div>
+
+              <div class="form-group">
+                <label for="total-cost">Total Cost:</label> <br>
+                <input type="text" id="total-cost" placeholder="-" disabled>
+              </div>
+
+              <div class="form-group">
+                <label for="balance">Balance:</label> <br>
+                <input type="text" id="balance" placeholder="-" disabled>
+              </div>
+            </div>
+
+            <h2>Payment Information</h2>
+            <div class="card-image-container">
+              <img src="https://be.synxis.com/public/images/Visa.png"
+                alt="Card Image">
+              <img src="https://be.synxis.com/public/images/MasterCard.png"
+                alt="Card Image">
+              <img src="https://be.synxis.com/public/images/Amex.png"
+                alt="Card Image">
+              <img src="https://be.synxis.com/public/images/Discover.png"
+                alt="Card Image">
+            </div>
+
+            <div class="column-container">
+              <div class="form-group">
+                <label for="payment-method">Payment Method:</label>
+                <br>
+                <select id="payment-method">
+                  <option value="credit-card">Credit Card</option>
+                  <option value="debit-card">Debit Card</option>
+                  <option value="debit-card">Prepaid Card</option>
+                </select>
+              </div>
+
+              <div id="name-details" class="form-group">
+                <label for="card-name">Card Name:</label> <br>
+                <input type="text" id="card-name" required
+                  placeholder="Name on Card*">
+              </div>
+
+              <div id="card-details" class="form-group">
+                <label for="card-number">Card Number:</label> <br>
+                <input type="text" id="card-number" required
+                  placeholder="Card Number*">
+              </div>
+
+              <div id="cvc-details" class="form-group">
+                <label for="cvc">CVC:</label> <br>
+                <input type="text" id="cvc" required
+                  placeholder="Security Code*">
+              </div>
+
+              <div id="expiry-details" class="form-group">
+                <label for="expiry-date">Expiry Date:</label> <br>
+                <input type="month" id="expiry-date" required>
+              </div>
+            </div>
+
+            <div>
+              <h2>Special Requests</h2><br>
+              <textarea id="special-requests" name="special-requests" rows="4"
+                cols="50"></textarea>
+            </div>
+
+            <div>
+              <h2>Terms and Conditions</h2>
+              <p>
+                <b>Check-in</b><br>
+                After 4:00 PM
+                <br>
+                <br>
+                <b>Check-out</b><br>
+                Before 12:00 PM
+                <br>
+
+                <h5 style="margin-left: 0;">ROOM 1 SUPERIOR SUITES</h5>
+                <h6 style="margin-bottom: 0;">Guarantee Policy</h6>
+                Deposit of 50% plus taxes and service charge at time of booking,
+                balance of accommodation value to be automatically taken 30 days
+                prior to arrival.<br>
+                <br>
+
+                <h6 style="margin-bottom: 0;">Cancel Policy</h6>
+                In the event of cancellation, no show or change of travel dates
+                within 30 days prior to arrival, the deposit held will be
+                forfeited.
+              </p>
+
+              <p>
+                <h2>Acknowledgements</h2>
+                <input type="checkbox" id="newsletters" style="width: 5%;">
+                <label for="newsletters" style="color:#000; margin-left: 0;">Yes,
+                  I would like to receive newsletters and special offers by
+                  email.</label><br>
+
+                <input type="checkbox" id="privacy-terms" style="width: 5%;">
+                <label for="privacy-terms" style="color:#000; margin-left: 0;">*
+                  I agree with the Privacy Terms.</label><br>
+
+                <input type="checkbox" id="booking-conditions"
+                  style="width: 5%;">
+                <label for="booking-conditions"
+                  style="color:#000; margin-left: 0;">* I agree with the Booking
+                  Conditions.</label>
+
+              </p>
+
+              <p>
+                By clicking on the Check Out button, I acknowledge and agree
+                that the above information is accurate and that my reservation
+                will be subject to the Hotel Booking Terms and Policies- On its
+                own.
+              </p>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-dark">CONFIRM YOUR STAY</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+    <!-- Bootstrap links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
